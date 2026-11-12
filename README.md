@@ -46,7 +46,6 @@ src/
                         ├── TemperatureUnit.java
                         └── TemperatureConverter.java
 ```
-
 ## Conversion Formulas
 
 ```text
