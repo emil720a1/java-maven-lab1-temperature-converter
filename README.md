@@ -45,7 +45,8 @@ src/
                         ├── Main.java
                         ├── TemperatureUnit.java
                         └── TemperatureConverter.java
-```
+```text
+
 Conversion Formulas
 °C → °F: °C × 9 / 5 + 32
 °F → °C: (°F − 32) × 5 / 9
