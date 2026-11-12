@@ -45,37 +45,68 @@ src/
                         ├── Main.java
                         ├── TemperatureUnit.java
                         └── TemperatureConverter.java
-```text
+```
 
-Conversion Formulas
+## Conversion Formulas
+
+```text
 °C → °F: °C × 9 / 5 + 32
 °F → °C: (°F − 32) × 5 / 9
 °C → K:  °C + 273.15
 K → °C:  K − 273.15
 °F → K:  (°F − 32) × 5 / 9 + 273.15
 K → °F:  (K − 273.15) × 9 / 5 + 32
-Input Validation
+```
+
+## Input Validation
+
 The application uses the following methods to validate user input:
+
+```java
 scanner.hasNextInt()
 scanner.hasNextDouble()
-The try-catch mechanism is not used for numeric input validation.
+```
+
+The `try-catch` mechanism is not used for numeric input validation.
 
 The application handles:
+
 - Text entered instead of a number
 - Invalid menu options
 - Temperatures below absolute zero
 - Invalid temperature units
-Building the Project
+
+## Building the Project
+
 To clean previous build results and create a JAR file, run:
+
+```bash
 mvn clean package
+```
+
 A successful build ends with:
+
+```text
 BUILD SUCCESS
-Running the Fat-JAR
+```
+
+## Running the Fat-JAR
+
 After building the project, run:
+
+```bash
 java -jar target/converter.jar
-If the JAR file has a different name, check the contents of the target directory:
+```
+
+If the JAR file has a different name, check the contents of the `target` directory:
+
+```bash
 ls target
-Example
+```
+
+## Example
+
+```text
 === Temperature Converter ===
 
 1) Celsius °C
@@ -88,14 +119,28 @@ Enter the value: 100
 Select the target unit: 2
 
 100.00 °C = 212.00 °F
-Example of invalid input:
+```
+
+### Example of Invalid Input
+
+```text
 Enter the value: abc
 Error: please enter a number.
-Example of absolute zero validation:
+```
+
+### Example of Absolute Zero Validation
+
+```text
 Enter the value: -5
 Error: temperature cannot be below absolute zero.
-Author
+```
+
+## Author
+
 Oleh Bondarenko
+
 Group: TCR-31
-Repository
-https://github.com/emil720a1/java-maven-lab1-temperature-converter
+
+## Repository
+
+[GitHub Repository](https://github.com/emil720a1/java-maven-lab1-temperature-converter)
